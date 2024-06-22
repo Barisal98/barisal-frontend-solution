@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center; */
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.5rem;
+
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cards-container{
+    color: white;
+    margin: 1.5rem;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 910px;
+    /* margin-inline: auto; */
+    /* margin: auto; */
+    /* flex-wrap: wrap; */
+
+}
+
+.card{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card img {
+    width: 64px;
+    height: 40px;
+}
+
+.card h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+    /* text-transform: uppercase; */
+}
+
+.card p{
+    opacity: 0.6;
+    /* line-height: 32px; */
+    line-height: 2;
+}
+
+.card a {
+    border: 2px solid white;
+    padding: 1em 2em;
+    border-radius: 2em;
+    margin: auto;
+   /* align-self: flex-start; */
+   margin-left: auto;
+   
+}
+
+.orange-card{
+    background-color: #E28525;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+    /* border-radius: 8px 8px 0 0; */
+}
+
+.darkCyan-card{
+    background-color: #006970;
+}
+
+.vdarkCyan-card{
+    background-color: #004241;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+    /* border-radius: 0 0 8px 8px; */
+}
+
+@media (max-width: 760px){
+    .cards-container {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .card {
+        width: auto;
+        /* width: unset; */
+    }
+}
